@@ -35,7 +35,13 @@ for (int num : numbers){
         luckyNumbers.push_back(num);
     }
 }
-for(int n : luckyNumbers){
-    cout << n << endl;
+if (luckyNumbers.size() == 0){
+    cout << "-1" << endl;
+}
+else{
+    cout << "Lucky numbers are:" << endl;
+    for(int n : luckyNumbers){
+        cout << n << endl;
+    }
 }
 }
